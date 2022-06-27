@@ -1,0 +1,317 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar-box {
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: #ffffff;
+    font-family: 'Sen', sans-serif;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.logo-box {
+    flex: 1;
+}
+
+a,
+.logo {
+    font-size: 30px;
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.menu-box {
+    flex: 6;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+
+}
+
+.menu-list-items {
+    margin-right: 30px;
+}
+
+.menu-list-items.active {
+    font-weight: bold;
+}
+
+.profile-box {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-text-box {
+    margin: 0 20px;
+}
+
+.profile-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.toggle-card {
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.toggle-icon {
+    color: goldenrod;
+}
+
+.toggle-ball {
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.sidebar-section {
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    /* justify-content: space-evenly; */
+
+}
+
+.sidebar-icon {
+    cursor: pointer;
+}
+
+.left-menu-icon {
+    color: white;
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 40px;
+
+}
+
+.container {
+    background-color: #151515;
+    min-height: calc(100vh - 50px);
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.content-container {
+    margin-left: 50px;
+
+   
+}
+
+.feature-content {
+    height: 50vh;
+    padding: 50px;
+}
+
+.featured-title {
+    width: 220px;
+    margin-top: 10px;
+}
+
+.featured-desc {
+    width: 500px;
+    color: lightgray;
+    margin: 30px 0px;
+    width: 300px;
+}
+
+.featured-button {
+    background-color: goldenrod;
+    color: black;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.movie-list-container {
+    padding: 0 20px;
+
+}
+
+.movie-list-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-list {
+    display: flex;
+    height: 300px;
+    align-items: center;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+
+}
+
+.movie-list-item {
+    margin-right: 30px;
+    position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img {
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+    box-shadow: 0px 0px 10px 1px crimson;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
+    opacity: 1;
+}
+
+.movie-list-item-img {
+    width: 270px;
+    object-fit: cover;
+    transform: rotate(360deg);
+    transition: all 1s ease-in-out;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.movie-list-item-title {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0 10px;
+    font-size: 17px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    text-transform: uppercase;
+}
+
+.movie-list-item-desc {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 230px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.movie-list-item-button {
+    padding: 10px;
+    background-color: goldenrod;
+    font-weight: bold;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+i.fa-angle-right {
+    position: absolute;
+    top: 90px;
+    font-size: 120px;
+    right: 0;
+    color: lightgray;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.container.active {
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.movie-list-title.active {
+    color: black;
+}
+
+.navbar-box.active {
+    background-color: white;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.sidebar-section.active {
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.left-menu-icon.active {
+    color: black;
+}
+
+.toggle-card.active {
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.toggle-ball.active {
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+    transform: translate(-20px);
+}
+
+/* .movie-list-item:hover .movie-list-item-img.active {
+    box-shadow: 0px 0px 40px 1px black;
+} */
+
+/* media queires */
+
+@media only screen and (max-width:940px) {
+    .menu-box {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:600px) {}
