@@ -7,14 +7,14 @@ arrows.forEach((arrow, i) => {
     arrow.addEventListener('click', () => {
         const ratio = Math.floor(window.innerWidth / 270);
         clickCounter++;
-        if (itemNumber - (4 + clickCounter)+(5-ratio) >= 0) {
+        if (itemNumber - (4 + clickCounter) + (5 - ratio) >= 0) {
             movieList[i].style.transform = `translateX(${movieList[i].computedStyleMap().get('transform')[0].x.value - 300}px)`;
         } else {
             movieList[i].style.transform = "translateX(0)"
             clickCounter = 0;
         }
     })
-    console.log(movieList[i].querySelectorAll("img").length)
+    // console.log(movieList[i].querySelectorAll("img").length)
 })
 const ball = document.querySelector(".toggle-ball");
 const items = document.querySelectorAll('.container,.movie-list-title,.navbar-box,.sidebar-section,.left-menu-icon,.toggle-card');
@@ -26,5 +26,4 @@ ball.addEventListener('click', () => {
     ball.classList.toggle('active')
 })
 
-//toggle
 

@@ -25,11 +25,22 @@
             </div>
             <div class="menu-box">
                 <ul class="menu-list">
-                    <li class="menu-list-items active">Home</li>
-                    <li class="menu-list-items">Movies</li>
-                    <li class="menu-list-items">Series</li>
-                    <li class="menu-list-items">Populer</li>
-                    <li class="menu-list-items">Trends</li>
+                    <a href="#home">
+                        <li class="menu-list-items active">Home</li>
+                    </a>
+                    <a href="#Upcoming">
+                        <li class="menu-list-items">Upcoming</li>
+                    </a>
+                    <a href="#Movies">
+                        <li class="menu-list-items">Movies</li>
+                    </a>
+                    <a href="#Series">
+                        <li class="menu-list-items">Series</li>
+                    </a>
+                    <a href="#Cartoons">
+                        <li class="menu-list-items">Cartoons</li>
+                    </a>
+
                 </ul>
             </div>
             <div class="profile-box">
@@ -58,13 +69,16 @@
     </div>
     <div class="container">
         <div class="content-container">
-            <div class="feature-content"
+            <div id="home" class="feature-content"
                 style="background: linear-gradient(to bottom, rgba(0,0,0,0),#151515), url(image/HD-wallpaper-avatar-2.jpg)50%; background-size: cover; border-radius: 20px;">
 
                 <img class="featured-title" src="image/hb_avatar_wayofthewater_logo_22827_88e2c4c8.webp"
                     alt="movie profile">
-                <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum architecto
-                    ab odio voluptatibus </p>
+                <p class="featured-desc">
+                    <strong style="color: #0062b5;">Release Date:</strong> 16 December 2022 (USA) <br>
+                    <strong style="color: #0062b5;">Director:</strong> James Cameron <br>
+                    <strong style="color: #0062b5;">Producers:</strong> James Cameron, Jon Landau <br>
+                </p>
                 <button class="featured-button">Watch</button>
             </div>
             <div class="movie-list-container">
@@ -129,7 +143,7 @@
                 </div>
             </div>
             <div class="movie-list-container">
-                <h1 class="movie-list-title">MOST FAVOURITE</h1>
+                <h1 id="Upcoming" class="movie-list-title">UPCOMING MOVIES</h1>
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
@@ -186,18 +200,8 @@
                 </div>
             </div>
 
-
-            <div class="feature-content"
-                style="background: linear-gradient(to bottom, rgba(0,0,0,0),#151515), url(image/f-2.jpg) 50%;border-radius: 20px;">
-
-                <img class="featured-title" style="margin-top:-30px;" src="image/f-t-2.png" alt="movie profile">
-                <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum architecto
-                    ab odio voluptatibus dolor?</p>
-                <button class="featured-button">Watch</button>
-            </div>
-
             <div class="movie-list-container">
-                <h1 class="movie-list-title">MARVEL MOVIES</h1>
+                <h1 id="Movies" class="movie-list-title">MUST WATCH</h1>
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
@@ -253,8 +257,21 @@
                     <i class="fa fa-angle-right arrow"></i>
                 </div>
             </div>
+
+            <div class="feature-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0),#151515), url(image/f-2.jpg) 50%;border-radius: 20px;background-size: cover;background-repeat: no-repeat;">
+
+                <img class="featured-title" style="margin-top:-30px;" src="image/f-t-2.png" alt="movie profile">
+                <p class="featured-desc"><strong style="color: #0062b5;">Release Date:</strong> 2017 | A | 3 Seasons |
+                    Crime TV Shows <br>
+                    <strong style="color: #0062b5;">Starring:</strong> Louis Hofmann,Oliver Masucci,Jördis Triebel<br>
+                    <strong style="color: #0062b5;">Creators:</strong> Baran bo Odar,Jantje Friese <br>
+                </p>
+                <a href="https://www.netflix.com/in/title/80100172"><button class="featured-button">Watch</button></a>
+            </div>
+
             <div class="movie-list-container">
-                <h1 class="movie-list-title">SI-FI MOVIES</h1>
+                <h1 id="Series" class="movie-list-title">LATEST SERIES</h1>
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
@@ -311,7 +328,7 @@
                 </div>
             </div>
             <div class="movie-list-container">
-                <h1 class="movie-list-title">CARTOON MOVIES</h1>
+                <h1 class="movie-list-title">MUST WATCH</h1>
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
@@ -367,6 +384,146 @@
                     <i class="fa fa-angle-right arrow"></i>
                 </div>
             </div>
+
+            <div id="Cartoons" class="feature-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0),#151515), url(image/dora\ banner.jpg) 10% 30%; background-size: cover; border-radius: 20px;">
+
+                <img class="featured-title" style="margin-top:-40px;" src="image/Doraemon.webp" alt="movie profile">
+                <p class="featured-desc"> <strong style="color: #0fd2f1;">Release Date:</strong> January 1970
+                    (first full story published) – June 23, 1996 <br>
+                    <strong style="color: #0fd2f1;">Written by</strong> Fujiko F. Fujio <br>
+                    <strong style="color: #0fd2f1;"> Television Company:</strong>Anime television series <br>
+                </p>
+                <a href="https://www.hotstar.com/in/tv/doraemon/1260021004/list/episodes/t-1_2_2498"> <button
+                        class="featured-button">Watch</button></a>
+            </div>
+
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">CARTOONS</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/Tom and jerry.jpg" alt="">
+                            <span class="movie-list-item-title">Tom and Jerry</span>
+                            <p class="movie-list-item-desc">Author(s): Fred Quimby (1950–52); Kelly Jarvis (1989–94).
+                                <br>
+                                End date: March 13, 1994; 28 years ago <br>
+                            </p>
+                            <a href="https://www.cartoonnetworkindia.com/show/tom-and-jerry/videos"><button
+                                    class="movie-list-item-button">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/dora banner.jpg" alt="">
+                            <span class="movie-list-item-title">Doraemon</span>
+                            <p class="movie-list-item-desc">Release Date:January 1970
+                                (first full story published) – June 23, 1996 <br>Written by:Fujiko F. Fujio
+                            </p>
+                            <a href="https://www.hotstar.com/in/tv/doraemon/1260021004/list/episodes/t-1_2_2498"><button
+                                    class="movie-list-item-button">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/Oggy-and-the-Cockroaches.webp" alt="">
+                            <span class="movie-list-item-title">Oggy & The Cockroaches</span>
+                            <p class="movie-list-item-desc">First episode date: 6 September 1998 <br>Created by:
+                                Jean-Yves Raimbaud <br>Networks: Cartoon Network,Fox</p>
+                            <a href="https://anime-world.in/series/oggy-and-the-cockroaches/"> <button
+                                    class="movie-list-item-button">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/Motu patlu.jpg" alt="">
+                            <span class="movie-list-item-title">Motu Patlu</span>
+                            <p class="movie-list-item-desc">Original release: 16 October 2012 <br>No. of episodes: 1048
+                                <br>
+                                Network: Nickelodeon
+                            </p>
+                            <a href="https://www.dailymotion.com/video/x7z0rmf"> <button
+                                    class="movie-list-item-button">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/ninja hatori.jpg" alt="">
+                            <span class="movie-list-item-title">Ninja Hattori</span>
+                            <p class="movie-list-item-desc">Released: March 5, 1986 <br>
+                                Developer: Hudson Soft <br>Produced by: Suprita Patil; Takahiro Kishimoto;</p>
+                            <a href="https://www.primevideo.com/detail/Ninja-Hattori/0K1T25I1GPDTD05REGJK0U0NVS"><button
+                                    class="movie-list-item-button">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/643596-v.jpg" alt="">
+                            <span class="movie-list-item-title">Shinchan</span>
+                            <p class="movie-list-item-desc"> Directed by: Mitsuru Hongo <br> network: ANN (TV Asahi)
+                                <br>Music by: Toshiyuki ArakawaOriginal</p>
+                            <a href="https://www.hotstar.com/in/tv/shinchan/1260020929?utm_source=gwa"><button
+                                    class="movie-list-item-button">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/maxresdefault.jpg" alt="">
+                            <span class="movie-list-item-title">Mr Bean</span>
+                            <p class="movie-list-item-desc"> <br> Original release: 5 January 2002 <br>Networks: CITV,
+                                ITV, Disney Channel, </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fa fa-angle-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">MUST WATCH</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/1.jpeg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Sed expedita voluptates,.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/2.jpeg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Sed expedita voluptates, eius dolorem consectetur facere.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/3.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Sed expedita voluptates, eius dolorem consectetur facere.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/4.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Sed expedita voluptates, eius dolorem consectetur facere.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/5.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Sed expedita voluptates, eius dolorem consectetur facere.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/6.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Sed expedita voluptates, eius dolorem consectetur facere.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/7.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Sed expedita voluptates, eius dolorem consectetur facere.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fa fa-angle-right arrow"></i>
+                </div>
+            </div>
+
         </div>
     </div>
     <script src="movie.js"></script>
