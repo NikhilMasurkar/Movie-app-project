@@ -274,6 +274,9 @@ i.fa-angle-right {
     cursor: pointer;
     opacity: 0.5;
 }
+.menu-list-items.active{
+    color: black;
+}
 
 .container.active {
     background-color: white;
