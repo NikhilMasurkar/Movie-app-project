@@ -5,7 +5,7 @@ arrows.forEach((arrow, i) => {
     const itemNumber = movieList[i].querySelectorAll("img").length;
     let clickCounter = 0; // for beginning
     arrow.addEventListener('click', () => {
-        const ratio = Math.floor(window.innerWidth / 270); //movie list img width is 270px.
+        const ratio = Math.floor(window.innerWidth / 270); //movie list img width is 270px. 
         clickCounter++; // after every click of arraow  it will increase.
         if (itemNumber - (4 + clickCounter) + (5 - ratio) >= 0) {
             movieList[i].style.transform = `translateX(${movieList[i].computedStyleMap().get('transform')[0].x.value - 300}px)`;
